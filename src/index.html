@@ -1,15 +1,57 @@
+<!--ESTRUCTURA BÁSICA DEL HTML-->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>deCode*</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Source+Code+Pro" rel="stylesheet">
+</head>
+
+<body>
+<center>
+  <h1>Bienvenidx a deCode👥</h1>
+  <div id="root">
+  <div id="login" class="helveticaText">
+    <input type="text" size="25" placeholder="¿Cómo quieres ser llamadx?" id="userName">
+      <button id="sendName" onclick="ingresar()">Ingresar</button>
+  </div>
+
+  <!--DESPLIEGUE DE INTRODUCCIÓN-->
+  <label id="welcomeMessage"></label>
+    <div id="buttonCategory" hidden class="helveticaText">Lo sabemos, estás buscando seguridad para tus mensajes privados 😉
+      Recuerda tener a mano tu código si lo que deseas es descifrar. En caso contrario, anota rápidamente el código que te 
+      entregaremos cuando cifres.
+      Esperamos que nuestra app te sea muy útil, ¡difunde y comparte!<br> <br>
+
+  <!--CAJAS DE TEXTO PARA INTRODUCIR Y COPIAR EL CIFRADO-->
+  <div><textarea name="enter" id="boxCipher" placeholder="Texto a cifrar... " cols="40" rows="15"></textarea></div>
+  <div><input type= number  name="offset" id="offset1"> Tu desplazamiento acá</input></div>    
+    <button id="btnCipher" >Cifrar 🔐</button> <br><br>
+     <div><textarea name="newtext" id="resultCipher" cols="40" rows="15"></textarea></div>
+
+<br> <br> <br>
+
+<div><textarea name="enter" id="boxDecipher" placeholder="Texto a descifrar... " cols="40" rows="15"></textarea></div>
+<div><input type= number  name="offset" id="offset2"> Tu desplazamiento acá </input></div> 
+    <button id="btnDecipher">Descifrar🔓</button> <br><br>
+    <div><textarea name="newtext" id="resultDecipher" cols="40" rows="15"></textarea></div>
+    <br><br><br>
+
+  <!--ÚLTIMO BOTÓN: RECURSOS-->
+    <a target="blank" href="https://es.hackblossom.org/cybersecurity/"><button id="btnResources" onclick="resources()">Recursos sobre ciberSeguridad 💥</button><br>
+    </a>
+</div>
+    
+
+  <div id="contenedor_datos">
+    <!-- Acá irá nuestro código que crearemos desde js -->
+  </div>
+  
+  <script src="main.js"></script>
+  <script src="cipher.js"></script>
+
+</body>
 </html>
