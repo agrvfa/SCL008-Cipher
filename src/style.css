@@ -1,1 +1,82 @@
-/* Acá va tu código */
+/*en css puedo hacer con block y display las distintas pantallas, tarea pendiente para luego de hacer el diseño */
+*{
+    margin: 1px;
+    padding: 30px;
+  }
+  
+  
+  body{
+    background: linear-gradient(0deg, rgba(213,99,117,1) 7%, rgba(43,232,180,1) 85%);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  
+  #welcome{
+    padding: 1%;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  #nombre {
+    padding: 1%;
+    margin: 1%;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  
+  #sendName{
+    background-color: #58FAF4;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 1px;
+    padding: 1%
+  }
+  
+  #buttonCategory{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2 px
+  }
+  
+  #btnCipher{
+    background-color: #58FAF4;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 1px;
+    padding: 1%
+  }
+  
+  #btnDecipher{
+    background-color: #58FAF4;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 1px;
+    padding: 1%
+  }
+  
+  #btnResources{
+    background-color: #58FAF4;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 1px;
+    padding: 1%
+  }
+  
+  .contenedor{
+    /*height: 200px;*/
+    border:1px;
+    margin: 2% 5%;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .text{
+    padding: 10%;
+    color:black
+    font-family: 'Source Code Pro', monospace;    ;
+  } 
+
+  @font-face{
+    font-family: babyblocks;
+    src: url(Desktop/LABORATORIA/PROYECTO1/font/babyblocks.ttf); 
+   
+   }
+   
+   h1{
+       font-family:babyblocks;
+   }
