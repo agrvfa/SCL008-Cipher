@@ -1,0 +1,9 @@
+@font-face{
+ font-family: babyblocks;
+ src: url(Desktop/LABORATORIA/PROYECTO1/font/babyblocks.ttf); 
+
+}
+
+h1{
+    font-family:babyblocks;
+}
